@@ -1,0 +1,171 @@
+/* Body ve Arkaplan */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6A5ACD, #00BFFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Ana Container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Yeni Logo */
+.logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Başlık */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input Kutuları */
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    border-color: #6A5ACD;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
+}
+
+/* Sign In Butonu */
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #28a745;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #218838;
+}
+
+/* OAuth Bölümü */
+.auth-divider {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    text-align: center;
+    line-height: 1; /* Çakışmayı önler */
+}
+
+.auth-divider:before,
+.auth-divider:after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Çizgilerin metinle hizalanması */
+    width: 35%;
+    height: 1px;
+    background: #ccc;
+    transform: translateY(-50%);
+}
+
+.auth-divider:before {
+    left: 0;
+}
+
+.auth-divider:after {
+    right: 0;
+}
+
+/* OAuth Butonları */
+.auth-buttons {
+    text-align: center;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.auth-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Buton Arkaplan Renkleri */
+.auth-btn.google {
+    background-color: #DB4437;
+}
+
+.auth-btn.apple {
+    background-color: #333333;
+}
+
+.auth-btn.facebook {
+    background-color: #4267B2;
+}
+
+.auth-btn.twitter {
+    background-color: #1DA1F2;
+}
+
+/* Hover Efektleri */
+.auth-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Footer (Sign-Up Link) */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer a {
+    color: #6A5ACD;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
